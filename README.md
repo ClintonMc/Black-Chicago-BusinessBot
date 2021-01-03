@@ -7,6 +7,7 @@ Credit to Chris Hagan's PermitBot https://github.com/chagan/permitbot for the ba
 Create Twitter account
 Obtain Twitter API keys/secrets
 Clone this repo to obtain files
+Add Twitter API keys/secrets to config 
 
 # Python packages used
 USAddresses https://github.com/datamade/usaddress
@@ -20,8 +21,13 @@ Datetime
 
 # Functions
 Post_status(text): Posts the text passed to it containing the new business license info
+
 Test_api(): Tests connection to Twitter API
+
 Duplicate_check(id,file): Checks the license ID against a running list of license IDs to confirm any duplicates prior to posting to Twitter
+
 Add_id_to_file(id,file): Adds the license ID to a list after posting it to Twitter. Will create a text file if one does not already exist and append to it after each run, assuming any new licenses are found
+
 Get_data(limit,offset,days): Downloads a CSV file of license data from the Chicago Open Data Portal from the past day and creates a Pandas dataframe. 
+
 Find_black(days=1): Calls get_data to retrieve a dataframe, creates a new dataframe that contains only licenses that have a ward number matching any of the 18 wards in a list called black_wards, and concantenates the text that will be tweeted. The usaddress parser helps to format the address in a more readable format. 
