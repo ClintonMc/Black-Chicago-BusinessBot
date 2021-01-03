@@ -3,6 +3,8 @@ Black Chicago BusinessBot is a Twitter bot that sends tweets whenever a new busi
 
 Credit to Chris Hagan's PermitBot https://github.com/chagan/permitbot for the basis of this bot.
 
+Follow this bot here: https://twitter.com/BlackChiBizBot
+
 # Setup for the Bot
 Create Twitter account
 Obtain Twitter API keys/secrets
